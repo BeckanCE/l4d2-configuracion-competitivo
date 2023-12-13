@@ -17,11 +17,11 @@
  - Se agrego ScavOgl y ScavHunters a las configuraciones de juego.
  - Se agrego SourceTV en las configuraciones, para empezar/detener una grabación usar los siguientes comandos:  
  
-    --Empezar grabación: !rcon_tv_record "nombre"
+    *Empezar grabación: !rcon_tv_record "nombre"
 	
-    --Detener la grabación: !rcon_tv_recordstop
+    *Detener la grabación: !rcon_tv_recordstop
 	
-	--Apagar SourceTV en el mapa: !rcon_tv_stop
+	*Apagar SourceTV en el mapa: !rcon_tv_stop
  
  **NOTAS**
  

@@ -15,9 +15,12 @@
  - Se modifico matchmodes.txt para que sea mas simplificado y este en español.
  - Se elimino el modo de juego "Deadman" de matchmodes.txt y de confogl.
  - Se agrego ScavOgl y ScavHunters a las configuraciones de juego.
- - Se agrego SourceTV en las configuraciones, para empezar/detener una grabación usar los siguientes comandos:                                                           
+ - Se agrego SourceTV en las configuraciones, para empezar/detener una grabación usar los siguientes comandos:  
+ 
     --Empezar grabación: !rcon_tv_record "nombre"
+	
     --Detener la grabación: !rcon_tv_recordstop
+	
 	--Apagar SourceTV en el mapa: !rcon_tv_stop
  
  **NOTAS**

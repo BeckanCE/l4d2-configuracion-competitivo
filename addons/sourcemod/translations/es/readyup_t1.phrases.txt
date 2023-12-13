@@ -69,7 +69,7 @@
 	}
 	"PanelSlots"
 	{
-		"es"		"▸ Servidor: %s \n▸ Espacios: %d/%d\n▸ Config: %s"
+		"es"		"▸ Servidor: %s \n▸ Espacios: %d/%d\n▸ Configuración: %s"
 	}
 	"PanelCommands"
 	{

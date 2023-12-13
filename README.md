@@ -1,6 +1,6 @@
 # Competitivo-L4D2-ES
  
- **Actualizado el 13/12/2023 12:10a.m.**
+ **Actualizado el 13/12/2023 4:55p.m.**
                         
  
  **MODIFICACIONES**
@@ -12,8 +12,9 @@
  - Algunos arboles navideños.
  - SouerceMod Anti-Cheat (SMAC) agregado.
  - Plugin para mostrar el daño causado por el Tank.
- - Se modifico matchmodes.txt para que sea mas simplificado, este en español.
+ - Se modifico matchmodes.txt para que sea mas simplificado y este en español.
  - Se elimino el modo de juego "Deadman" de matchmodes.txt y de confogl.
+ - Se agrego ScavOgl y ScavHunters a las configuraciones de juego.
  
  **NOTAS**
  
@@ -24,6 +25,6 @@
  
   **TODO ESTO NO ME PERTENECE, TODOS LOS DERECHOS A SUS RESPECTIVOS AUTORES**
  
- - SirPease: https://github.com/SirPlease
+ - SirPlease: https://github.com/SirPlease
  - Lechuga16: https://github.com/lechuga16
  

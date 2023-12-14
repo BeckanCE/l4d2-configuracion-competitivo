@@ -25,7 +25,7 @@
  
  **NOTAS**
  
- - Cambiar el nombre de servidor en server1.cfg para que coincida con Srdsc1.
+ - No olvides modificar server1.cfg
 
 
 **Esto es una modificación a los proyectos originales de SirPease y Lechuga16.**

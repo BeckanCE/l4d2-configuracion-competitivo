@@ -1,6 +1,6 @@
 # Competitivo-L4D2-ES
  
- **Actualizado el 13/12/2023 4:55p.m.**
+ **Actualizado el 14/12/2023 5:00p.m.**
                         
  
  **MODIFICACIONES**
@@ -9,10 +9,11 @@
  - Soporte en español para el plugin ReadyUp.
  - Plugin para mover a los AFK al equipo de espectadores.
  - Nieve por temporada navideña.
- - Algunos arboles navideños.
  - SouerceMod Anti-Cheat (SMAC) agregado.
  - Plugin para mostrar el daño causado por el Tank.
  - Se modifico matchmodes.txt para que sea mas simplificado y este en español.
+ - Se agrego una tabla que muestra a los 5 mejores skeeters, siempre que haya un skeet.
+ - Se agrego un plugin para anunciar cuando algun superviviente causa fuego amigo.
  - Se elimino el modo de juego "Deadman" de matchmodes.txt y de confogl.
  - Se agrego ScavOgl y ScavHunters a las configuraciones de juego.
  - Se agrego SourceTV en las configuraciones, para empezar/detener una grabación usar los siguientes comandos:  

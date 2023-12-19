@@ -6,11 +6,11 @@
 	}
 	"Reload"
 	{
-        "es"	"{olive}(R)Recarga{default} = {blue}2 Manos por encima de la cabeza{default}"
+        "es"	"{olive}(Tecla R)Recarga{default} = {blue}2 Manos por encima de la cabeza{default}"
 	}
 	"Use"
 	{
-        "es"	"{olive}(E)Usar{default} = {blue}Lateral{default}"
+        "es"	"{olive}(Tecla E)Usar{default} = {blue}2 Manos por abajo{default}"
 	}
 	"M2"
 	{

@@ -373,7 +373,7 @@ void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 							if (shots == 1)
 							{
 								CreateTimer(0.0, Timer_Statistic, GetClientUserId(attacker), TIMER_FLAG_NO_MAPCHANGE);
-								CreateTimer(0.1, Timer_PrintTopSkeeters, 0, TIMER_FLAG_NO_MAPCHANGE);
+								CreateTimer(2.0, Timer_PrintTopSkeeters, 0, TIMER_FLAG_NO_MAPCHANGE);
 								Skeeted(attacker);
 								Skeets[attacker]++;
 								Kills[attacker]++;
@@ -382,7 +382,7 @@ void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 						else
 						{
 							CreateTimer(0.0, Timer_Statistic, GetClientUserId(attacker), TIMER_FLAG_NO_MAPCHANGE);
-							CreateTimer(0.1, Timer_PrintTopSkeeters, 0, TIMER_FLAG_NO_MAPCHANGE);
+							CreateTimer(2.0, Timer_PrintTopSkeeters, 0, TIMER_FLAG_NO_MAPCHANGE);
 							Skeeted(attacker);
 							Skeets[attacker]++;
 							Kills[attacker]++;
@@ -422,7 +422,7 @@ void Event_AbilityUse(Event event, const char[] name, bool dontBroadcast)
 	if (IsClientInGame(client) && IsPlayerHunter(client))
 	{
 		g_bIsPouncing[client] = true;
-		CreateTimer(0.1, Timer_GroundedCheck, client, TIMER_REPEAT);
+		CreateTimer(1.0, Timer_GroundedCheck, client, TIMER_REPEAT);
 	}
 }
 
@@ -460,7 +460,7 @@ void Event_PlayerShoved(Event event, const char[] name, bool dontBroadcast)
 		g_bIsPouncing[victim] = false;
 		g_bHasLandedPounce[attacker] = false;
 		Handle pack;
-		CreateDataTimer(0.2, Timer_DeadstopCheck, pack, TIMER_FLAG_NO_MAPCHANGE);
+		CreateDataTimer(1.0, Timer_DeadstopCheck, pack, TIMER_FLAG_NO_MAPCHANGE);
 		WritePackCell(pack, attacker);
 		WritePackCell(pack, victim);
 	}
@@ -616,7 +616,7 @@ void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
 
 void Skeeted(int client)
 {
-	CreateTimer(0.1, Award, client, TIMER_FLAG_NO_MAPCHANGE);
+	CreateTimer(1.0, Award, client, TIMER_FLAG_NO_MAPCHANGE);
 	timerDeath[client] = 200;
 }
 
@@ -632,7 +632,7 @@ Action Award(Handle timer, int client)
 		{
 			case 120:
 			{
-				CreateTimer(1.1, Award, client, TIMER_FLAG_NO_MAPCHANGE);
+				CreateTimer(2.1, Award, client, TIMER_FLAG_NO_MAPCHANGE);
 			}
 			case 140:
 			{
@@ -648,7 +648,7 @@ Action Award(Handle timer, int client)
 			}
 			default:
 			{
-				CreateTimer(1.3, Award, client, TIMER_FLAG_NO_MAPCHANGE);
+				CreateTimer(2.3, Award, client, TIMER_FLAG_NO_MAPCHANGE);
 			}
 		}
 	}
@@ -745,16 +745,16 @@ void PrintTopSkeeters(int client)
 	if (oneshot == 1)
 	{
 		if(g_hCvar1v1Separate.BoolValue && Is1v1)
-			FormatEx(sBuffer, sizeof(sBuffer), "Best One Shot Skeeters In 1v1");
+			FormatEx(sBuffer, sizeof(sBuffer), "Mejores Skeeters De 1 Disparo En 1v1");
 		else
-			FormatEx(sBuffer, sizeof(sBuffer), "Best One Shot Skeeters");
+			FormatEx(sBuffer, sizeof(sBuffer), "Mejores Skeeters De 1 Disparo");
 	}
 	else
 	{
 		if(g_hCvar1v1Separate.BoolValue && Is1v1)
-			FormatEx(sBuffer, sizeof(sBuffer), "Top %d Skeeters In 1v1", TOP_NUMBER);
+			FormatEx(sBuffer, sizeof(sBuffer), "Mejores Skeeters %d En 1v1", TOP_NUMBER);
 		else 
-			FormatEx(sBuffer, sizeof(sBuffer), "Top %d Skeeters", TOP_NUMBER);
+			FormatEx(sBuffer, sizeof(sBuffer), "Mejores Skeeters %d", TOP_NUMBER);
 	}
 	panel.SetTitle(sBuffer);
 	panel.DrawText("\n ");

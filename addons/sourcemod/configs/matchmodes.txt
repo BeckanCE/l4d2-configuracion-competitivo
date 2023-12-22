@@ -1,0 +1,158 @@
+"MatchModes"
+{
+	"Configuraciones 4v4"
+	{
+		"zonemod"
+		{
+			"name" "ZoneMod"
+		}
+		"zoneretro"
+		{
+			"name" "ZoneMod Retro"
+		}
+		"nextmod"
+		{
+			"name" "NextMod"
+		}
+		"zonehunters"
+		{
+		    "name" "ZoneHunters"
+		}
+		"scavogl"
+		{
+		    "name" "Scavogl"
+	    }
+		"scavhunters"
+		{
+		    "name" "ScavHunters"
+		}
+		"neomod"
+		{
+			"name" "NeoMod"
+		}
+		"pmelite"
+		{
+			"name" "Promod Elite"
+		}
+		"acemodrv"
+		{
+		    "name" "Acemod RV"
+		}
+		"eq"
+		{
+		    "name" "Equilibrium"
+		}
+		"apex"
+		{
+		    "name" "Apex"
+		}
+	}
+	"Configuraciones 3v3"
+	{
+		"zm3v3"
+		{
+			"name" "ZoneMod"
+		}
+		"nextmod3v3"
+		{
+		    "name" "NextMod"
+		}
+		"zh3v3"
+		{
+		    "name" "ZoneHunters"
+		}
+		"scav3v3"
+		{   
+		    "name" "Scavogl"
+		}
+		"scavh3v3"
+		{
+		    "name" "ScavHunters"
+		}
+		"amrv3v3"
+		{
+		    "name" "Acemod RV"
+		}
+		"eq3v3"
+		{
+		    "name" "Equilibrium"
+		}		
+	}
+	"Configuraciones 2v2"
+	{
+		"zm2v2"
+		{
+			"name" "ZoneMod"
+		}
+		"nextmod2v2"
+		{
+			"name" "NextMod"
+		}
+		"zh2v2"
+		{
+			"name" "ZoneHunters"
+		}
+		"scav2v2"
+		{
+			"name" "Scavogl"
+		}
+		"scavh2v2"
+		{
+		    "name" "ScavHunters"
+		}
+		"amrv2v2"
+		{
+		    "name" "Acemod"
+		}
+		"eq2v2"
+		{
+		    "name" "Equilibrium"
+		}
+	}
+	"Configuraciones 1v1"
+	{
+		"zm1v1"
+		{
+			"name" "ZoneMod"
+		}
+		"nextmod1v1"
+		{
+			"name" "NextMod"
+		}
+		"zh1v1"
+		{
+		    "name" "ZoneHunters"
+		}
+		"scav1v1"
+		{
+		    "name" "Scavogl"
+		}
+		"scavh1v1"
+		{
+		    "name" "ScavHunters"
+		}
+		"amrv1v1"
+		{
+		    "name" "Acemod"
+		}
+		"eq1v1"
+		{
+		    "name" "Equilibrium"
+		}
+	}
+	"PracticeOgl"
+	{
+		"pr1v1"
+		{
+		    "name" "PracticeOgl 1v1"
+		}
+		"ph1"
+		{
+		    "name" "Practice Hunter 1 Player"
+		}
+		"ph2"
+		{
+		    "name" "Practice Hunter 2 Player"
+		}
+	}
+}

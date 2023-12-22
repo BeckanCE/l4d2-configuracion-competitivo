@@ -1,0 +1,19 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"en"		"[{olive}AFK{default}]"
+	}
+	"Footer"
+	{
+		"en"		"Time to set ReadyUp: %ds"
+	}
+	"ShowTimer"
+	{
+		"en"		"You have {red}%d{default}s left to mark ready"
+	}
+    "MoveToSpec"
+    {
+        "en"        "{blue}%N{default} was moved to {green}spect{default}"
+    }
+}

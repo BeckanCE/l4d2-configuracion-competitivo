@@ -1,0 +1,15 @@
+"skeetdata"
+{
+	"data"
+	{
+		"STEAM_1:0:715055340"
+		{
+			"skeet"		"17"
+			"Name"		"beckham"
+		}
+	}
+	"info"
+	{
+		"count"		"1"
+	}
+}

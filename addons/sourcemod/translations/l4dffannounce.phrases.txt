@@ -1,0 +1,33 @@
+﻿"Phrases"
+{
+	"KILL"
+	{
+		"en"		"{lightgreen}%N {default}killed {olive}%N{default}."
+		"zho"		"{lightgreen}%N {default}星爆氣流斬 {olive}%N{default}."
+		"chi"		"{lightgreen}%N {default}星爆气流斩 {olive}%N{default}."
+	}
+	"FF_dealt (C)"
+	{
+		"en"		"{green}You{default} did {blue}FF{default} to {lightgreen}%s{default} @ {lightgreen}%d{default} HP."
+		"zho"		"你剛造成 {green}%d{default} 滴血給 {lightgreen}%s{default}."
+		"chi"		"你刚造成 {green}%d{default} 滴血给 {lightgreen}%s{default}."
+	}
+	"FF_dealt"
+	{
+		"en"		"You did %d FF to %s."
+		"zho"		"你剛造成 %d 滴血給 %s."
+		"chi"		"你刚造成 %d 滴血给 %s."
+	}
+	"FF_receive (C)"
+	{
+		"en"		"{lightgreen}%s{default} did {blue}FF{default} to {green}you{default} @ {lightgreen}%d{default} HP."
+		"zho"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血給你."
+		"chi"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血给你."
+	}
+	"FF_receive"
+	{
+		"en"		"%s did %d friendly fire damage to you"
+		"zho"		"%s 造成了 %d 滴血給你."
+		"chi"		"%s 造成了 %d 滴血给你."
+	}
+}

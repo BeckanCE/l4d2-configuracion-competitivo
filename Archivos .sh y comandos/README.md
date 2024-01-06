@@ -7,7 +7,9 @@
 1.- Iniciamos nuestro servidor con SRCDS de SirPlease
 
 2.- Nos conectamos a nuestra VPS a travez de PuTTY con usuario root y ejecutamos los siguientes comandos. (No copies el asterisco)
+
     **sudo apt-get install htop**
+	
 	**htop**
 	
 3.- Nos saldran varios procesos, para ordenarlos presionamos la tecla F5. Despúes en la parte superior derecha en donde dice "Command", en la fila buscaremos nuestro servidor, una vez ubicado no perdamos la linea y nos iremos hacia la izquiera hasta llegar donde a la fila llamda PID, en la linea de nuestro servidor estarán unos números el cual sera el PID del proceso de nuestro servidor que es necesario y lo anotamos.

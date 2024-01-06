@@ -23,7 +23,7 @@
  **Proximas modificaciones**
  
  - Se agregará Litle-Anticheat.
- - Se agregará soporte para SourceTV debido a errores al intentar reproducir los .dem grabados.
+ - Se agregarán correciones y archivos de soporte para SourceTV debido a errores al intentar reproducir los .dem grabados.
  - Se agregará un plugin para que los administradores puedan usar comandos propios de sv_cheats.
  - Se agregará un plugin para que los administradores puedan anular o permitir una votación en curso.
  - Se agregará un plugin para que los jugadores puedan cambiar el modo de juego a tráves de una votación.

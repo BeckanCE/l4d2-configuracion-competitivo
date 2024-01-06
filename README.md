@@ -5,31 +5,25 @@
  
  **MODIFICACIONES**
  
- - Lerps +67 en todas las configuraciones.
- - Soporte en español para el plugin ReadyUp.
+ - Los lerps de configuro para que acepte hasta 100 en todas las configuraciones.
+ - Se traducio los textos de ReadyUP.
  - Plugin para mover a los AFK al equipo de espectadores.
- - Nieve por temporada navideña.
+ - Nieve para la temporada navideña.
  - SouerceMod Anti-Cheat (SMAC) agregado.
  - Plugin para mostrar el daño causado por el Tank.
- - Se modifico matchmodes.txt para que sea mas simplificado y este en español.
- - Se agrego una tabla que muestra a los 5 mejores skeeters, siempre que haya un skeet de 1 shot.
- - Se agrego un plugin para anunciar cuando algun superviviente causa fuego amigo.
+ - Se modifico matchmodes.txt para que sea más facil.
+ -
+ - Se notifica
  - Se elimino el modo de juego "Deadman" de matchmodes.txt y de confogl.
  - Se agrego ScavOgl y ScavHunters a las configuraciones de juego.
- - Se agrego SourceTV en las configuraciones, para empezar/detener una grabación usar los siguientes comandos:  
- 
-    *Empezar grabación: !rcon_tv_record "nombre"
-	
-    *Detener la grabación: !rcon_tv_recordstop
-	
-	*Apagar SourceTV en el mapa: !rcon_tv_stop
+ - Se agrego SourceTV en las configuraciones, tambien grabara automáticamente la partida cuando se cargue una configuración y haya +2 jugadores humanos.
  
  **NOTAS**
  
  - No olvides modificar server1.cfg
 
 
-**Esto es una modificación a los proyectos originales de SirPease y Lechuga16.**
+**Esta carpeta modifica el proyecto original de SirPlease y agrega algunos plugins de Lechuga16 y otros.**
  
   **TODO ESTO NO ME PERTENECE, TODOS LOS DERECHOS A SUS RESPECTIVOS AUTORES**
  

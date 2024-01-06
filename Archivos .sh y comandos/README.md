@@ -26,16 +26,16 @@
 
     ./check_and_execute.sh
 	
-	Si todo esta bien nos saldra el siguiente mensaje: "El proceso no está en ejecución, ejecutar el comando con privilegios de root"
+Si todo esta bien nos saldra el siguiente mensaje: "El proceso no está en ejecución, ejecutar el comando con privilegios de root"
 	
 8.- Para configurar que el archivo se ejecute automáticamente ponemos el siguiente comando.
 
     crontab -e
 	
-	Se nos abrira un texto, nos desplazamos hasta la ultima línea esta debe estar vacía, si no es el caso presionamos enter y ponemos el siguiente texto.
+Se nos abrira un texto, nos desplazamos hasta la ultima línea esta debe estar vacía, si no es el caso presionamos enter y ponemos el siguiente texto.
 	
 	*/1 * * * * /root/check_and_execute.sh
 	
-	Presionamos Ctrl + X para dejar de editar el archivo, presionamos Y para guardar los cambios y Enter para cerrar el archivo. Ya podemos cerrar PuTTY
+Presionamos Ctrl + X para dejar de editar el archivo, presionamos Y para guardar los cambios y Enter para cerrar el archivo. Ya podemos cerrar PuTTY
 	
 **Listo, ahora tu servidor se reiniciara automáticamente cada vez que el último jugador se desconecte.**

@@ -12,7 +12,7 @@
 	
 	htop
 	
-3.- Nos saldran varios procesos, para ordenarlos presionamos la tecla F5. Despúes en la parte superior derecha en donde dice "Command", en la fila buscaremos nuestro servidor, una vez ubicado no perdamos la linea y nos iremos hacia la izquiera hasta llegar donde a la fila llamda PID, en la linea de nuestro servidor estarán unos números el cual sera el PID del proceso de nuestro servidor que es necesario y lo anotamos.
+3.- Nos saldran varios procesos, para ordenarlos presionamos la tecla F5. Despúes en la parte superior derecha en donde dice "Command", en la colummna buscaremos nuestro servidor, una vez ubicado no perdamos la línea y nos iremos hacia la izquierda hasta llegar a la columna llamada PID, en la línea de nuestro servidor estarán unos números el cual sera el PID del proceso de nuestro servidor que es necesario y lo anotamos.
 
 4.- Entramos al archivo check_and_execute.sh y modificamos la línea 4. Cambiamos el PDI por el que obtuvimos anteriormente, guardamos los cambios y cerramos el archivo.
 
@@ -38,4 +38,4 @@
 	
 	Presionamos Ctrl + X para dejar de editar el archivo, presionamos Y para guardar los cambios y Enter para cerrar el archivo. Ya podemos cerrar PuTTY
 	
-**Listo, ahora tu servidor se reiniciara automáticamente cada vez que el ultimo jugador se desconecte.**
+**Listo, ahora tu servidor se reiniciara automáticamente cada vez que el último jugador se desconecte.**

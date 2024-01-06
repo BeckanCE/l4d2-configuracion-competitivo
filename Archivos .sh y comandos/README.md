@@ -4,8 +4,6 @@
 
 1.- Iniciamos nuestro servidor con la guía de SirPlease.
 
-
-
 2.- Nos conectamos a nuestra VPS a travez de PuTTY con usuario root y ejecutamos los siguientes comandos.
 
     sudo apt-get install htop
@@ -20,17 +18,17 @@
 
 6.- Nos conectamos nuevamente a nuestro VPS con usuario root desde PuTTY y colocamos los siguiente comandos.
 
-    **chmod +x check_and_execute.sh**
+    chmod +x check_and_execute.sh
 	
 7.- Probamos el archivo con el siguiente comando, para esto nuestro servidor debe estar apagado.
 
-    **./check_and_execute.sh**
+    ./check_and_execute.sh
 	
  Si todo esta bien nos saldra el siguiente mensaje: "El proceso no está en ejecución, ejecutar el comando con privilegios de root"
 	
 8.- Para configurar que el archivo se ejecute automáticamente ponemos el siguiente comando.
 
-    **crontab -e**
+    crontab -e
 	
  Se nos abrira un texto, nos desplazamos hasta la ultima línea esta debe estar vacía, si no es el caso presionamos enter y ponemos el siguiente texto.
 	

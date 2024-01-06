@@ -140,19 +140,4 @@
 		    "name" "Equilibrium"
 		}
 	}
-	"PracticeOgl"
-	{
-		"pr1v1"
-		{
-		    "name" "PracticeOgl 1v1"
-		}
-		"ph1"
-		{
-		    "name" "Practice Hunter 1 Player"
-		}
-		"ph2"
-		{
-		    "name" "Practice Hunter 2 Player"
-		}
-	}
 }

@@ -20,7 +20,7 @@
  - Se elimino un plugin que servia para bloquar "cl_thirdpersonshoulder".
  
  
- **Proximas modificaiones**
+ **Proximas modificaciones**
  
  - Se agregará Litle-Anticheat.
  - Se agregará soporte para SourceTV debido a errores al intentar reproducir los .dem grabados.

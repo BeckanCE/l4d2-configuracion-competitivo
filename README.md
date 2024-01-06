@@ -20,7 +20,7 @@
  
  **NOTAS**
  
- - No olvides modificar server1.cfg
+ - No olvides reemplazar los nombres de las líneas 6 y 19 del archivo server1.cfg con el nombre de tu servidor. Se recomienda usar Notepad++
 
 
 **Esta carpeta modifica el proyecto original de SirPlease y agrega algunos plugins de Lechuga16 y otros.**

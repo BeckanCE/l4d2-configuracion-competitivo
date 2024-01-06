@@ -6,7 +6,6 @@
 
 1.- Iniciamos nuestro servidor con SRCDS de SirPlease
 
-
 2.- Nos conectamos a nuestra VPS a travez de PuTTY con usuario root y ejecutamos los siguientes comandos. (No copies el asterisco)
     *sudo apt-get install htop
 	*htop

@@ -1,19 +1,15 @@
 "Phrases"
 {
-	"Tag"
-	{
-		"en"		"[{olive}AFK{default}]"
-	}
 	"Footer"
 	{
-		"en"		"Time to set ReadyUp: %ds"
+        "es"        "Tiempo máximo AFK: %ds"
 	}
 	"ShowTimer"
 	{
-		"en"		"You have {red}%d{default}s left to mark ready"
+        "es"        "Tienes {red}%d{default}s para marcar listo"
 	}
     "MoveToSpec"
     {
-        "en"        "{blue}%N{default} was moved to {green}spect{default}"
+        "es"        "{blue}%N{default} ha sido trasladado a {green}Espectador{default}"
     }
 }

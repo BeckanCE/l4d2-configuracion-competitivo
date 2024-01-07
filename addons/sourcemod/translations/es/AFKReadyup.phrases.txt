@@ -2,7 +2,7 @@
 {
 	"Footer"
 	{
-        "es"        "Tiempo para ReadyUp: %ds"
+        "es"        "Tiempo máximo AFK: %ds"
 	}
 	"ShowTimer"
 	{

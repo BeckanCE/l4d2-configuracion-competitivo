@@ -2,14 +2,14 @@
 {
 	"Footer"
 	{
-        "en"        "Maxium AFK time: %ds"
+        "es"        "Tiempo máximo AFK: %ds"
 	}
 	"ShowTimer"
 	{
-        "en"        "You have {red}%d{default}s to mark ready. Press F1 or type !ready"
+        "es"        "Tienes {red}%d{default}s para marcar listo"
 	}
     "MoveToSpec"
     {
-        "en"        "{blue}%N{default} has been moved to the {green}spectator{default} team"
+        "es"        "{blue}%N{default} ha sido trasladado a {green}Espectador{default}"
     }
 }

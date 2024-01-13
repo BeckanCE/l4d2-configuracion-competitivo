@@ -6,10 +6,10 @@
 	}
 	"ShowTimer"
 	{
-        "es"        "Tienes {red}%d{default}s para marcar ready. Presiona F1 o escribe !ready"
+        "es"        "Tienes {red}%d{default}s para marcar listo"
 	}
     "MoveToSpec"
     {
-        "es"        "{blue}%N{default} ha sido trasladado al equipo de {green}espectadores{default}"
+        "es"        "{blue}%N{default} ha sido trasladado a {green}Espectador{default}"
     }
 }

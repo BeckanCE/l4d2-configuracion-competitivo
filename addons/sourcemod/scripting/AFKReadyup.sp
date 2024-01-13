@@ -1,8 +1,6 @@
 #pragma semicolon 1
 
 #include <sourcemod>
-#include <l4d2util_constants>
-#include <l4d2util_stocks>
 #include <sdktools>
 #include <colors>
 
@@ -30,13 +28,24 @@ float
 	g_fPlayerLastEyes[MAXPLAYERS + 1][3];
 
 Handle
-	 g_hStartTimerAFK;
+	g_hStartTimerAFK;
 
-bool g_bReadyUpAvailable;
+bool
+	g_bReadyUpAvailable;
+
+enum L4DTeam
+{
+	L4DTeam_Unassigned = 0,
+	L4DTeam_Spectator  = 1,
+	L4DTeam_Survivor   = 2,
+	L4DTeam_Infected   = 3
+}
 
 /*****************************************************************
 			P L U G I N   I N F O
 *****************************************************************/
+
+
 public Plugin myinfo =
 {
 	name		= "AFK on Readyup",
@@ -49,6 +58,7 @@ public Plugin myinfo =
 /*****************************************************************
 			F O R W A R D   P U B L I C S
 *****************************************************************/
+
 public void OnAllPluginsLoaded()
 {
 	g_bReadyUpAvailable = LibraryExists("readyup");
@@ -77,7 +87,6 @@ public void OnPluginStart()
 	g_cvarShowTimer	   = CreateConVar("sm_afk_show", "10", "Show timer to players, 0 is disable", FCVAR_NOTIFY, true, 0.0);
 
 	AutoExecConfig(false, "AFKReadyup");
-	g_cvarEnable.AddChangeHook(Cvars_Enable);
 
 	RegConsoleCmd("say", Command_Say);
 	RegConsoleCmd("say_team", Command_Say);
@@ -92,73 +101,71 @@ public void OnPluginStart()
 	HookEntityOutput("func_button_timed", "OnPressed", Event_OnPressed);
 }
 
-void Cvars_Enable(ConVar hConVar, const char[] sOldValue, const char[] sNewValue)
-{
-	if (StrEqual(sNewValue, "0"))
-	{
-		UnhookEvent("entity_shoved", Event_PlayerAction);
-		UnhookEvent("player_shoved", Event_PlayerAction);
-		UnhookEvent("player_hurt", Event_PlayerAction);
-		UnhookEvent("player_hurt_concise", Event_PlayerAction);
-
-		UnhookEvent("player_jump", Event_PlayerJump);
-		UnhookEvent("player_team", Event_PlayerTeam);
-		UnhookEntityOutput("func_button_timed", "OnPressed", Event_OnPressed);
-	}
-	else if (StrEqual(sNewValue, "1"))
-	{
-		HookEvent("entity_shoved", Event_PlayerAction);
-		HookEvent("player_shoved", Event_PlayerAction);
-		HookEvent("player_hurt", Event_PlayerAction);
-		HookEvent("player_hurt_concise", Event_PlayerAction);
-
-		HookEvent("player_jump", Event_PlayerJump);
-		HookEvent("player_team", Event_PlayerTeam);
-		HookEntityOutput("func_button_timed", "OnPressed", Event_OnPressed);
-	}
-}
-
 Action Command_Say(int iClient, int iArgs)
 {
-	if (IsValidClientIndex(iClient) && IsClientInGame(iClient) && !IsFakeClient(iClient))
-		ResetTimers(iClient);
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return Plugin_Continue;
 
+	if (!IsValidClientIndex(iClient) || !IsClientInGame(iClient) || IsFakeClient(iClient))
+		return Plugin_Continue;
+
+	ResetTimers(iClient);
 	return Plugin_Continue;
 }
 
 void Event_PlayerAction(Event hEvent, const char[] sName, bool bDontBroadcast)
 {
-	int iClient = GetClientOfUserId(hEvent.GetInt("attacker"));
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return;
 
-	if (IsValidClientIndex(iClient) || IsClientInGame(iClient) || !IsFakeClient(iClient))
-		ResetTimers(iClient);
+	int iClient = GetClientOfUserId(hEvent.GetInt("attacker"));
+	if (!IsValidClientIndex(iClient) || !IsClientInGame(iClient) || IsFakeClient(iClient))
+		return;
+
+	ResetTimers(iClient);
 }
 
 void Event_PlayerJump(Event hEvent, const char[] sName, bool bDontBroadcast)
 {
-	int iClient = GetClientOfUserId(hEvent.GetInt("userid"));
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return;
 
-	if (IsValidClientIndex(iClient) || IsClientInGame(iClient) || !IsFakeClient(iClient))
-		ResetTimers(iClient);
+	int iClient = GetClientOfUserId(hEvent.GetInt("userid"));
+	if (!IsValidClientIndex(iClient) || !IsClientInGame(iClient) || IsFakeClient(iClient))
+		return;
+
+	ResetTimers(iClient);
 }
 
 void Event_PlayerTeam(Event hEvent, const char[] sName, bool bDontBroadcast)
 {
-	int iClient = GetClientOfUserId(hEvent.GetInt("userid"));
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return;
 
-	if (IsValidClientIndex(iClient) || IsClientInGame(iClient) || !IsFakeClient(iClient))
-		ResetTimers(iClient);
+	int iClient = GetClientOfUserId(hEvent.GetInt("userid"));
+	if (!IsValidClientIndex(iClient) || !IsClientInGame(iClient) || IsFakeClient(iClient))
+		return;
+
+	ResetTimers(iClient);
 }
 
 void Event_OnPressed(const char[] sName, int iCaller, int iActivator, float fDelay)
 {
-	if (IsValidClientIndex(iActivator) || IsClientInGame(iActivator))
-		ResetTimers(iActivator);
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return;
+
+	if (!IsValidClientIndex(iActivator) || !IsClientInGame(iActivator) || IsFakeClient(iActivator))
+		return;
+
+	ResetTimers(iActivator);
 }
 
 public void OnClientPutInServer(int iClient)
 {
-	if (IsFakeClient(iClient) || !g_bReadyUpAvailable || !IsInReady())
+	if (!g_cvarEnable.BoolValue || !g_bReadyUpAvailable || !IsInReady())
+		return;
+
+	if (IsFakeClient(iClient))
 		return;
 
 	g_iPlayerAFK[iClient] = g_cvarTime.IntValue;
@@ -179,19 +186,19 @@ public OnReadyUpInitiate()
 
 	for (int iClient = 1; iClient <= MaxClients; iClient++)
 	{
-		if (IsClientInGame(iClient) && !IsFakeClient(iClient))
-		{
-			int iTeam = GetClientTeam(iClient);
-			if (iTeam == L4D2Team_Survivor || iTeam == L4D2Team_Infected)
-			{
-				if (g_cvarDebug.BoolValue)
-					CPrintToChatAll("%t Set timer to: {blue}%N{default} | {green}%d{default}", "Tag", iClient, g_cvarTime.IntValue);
-				g_iPlayerAFK[iClient] = g_cvarTime.IntValue;
-			}
+		if (!IsClientInGame(iClient) || IsFakeClient(iClient))
+			continue;
 
-			GetClientAbsOrigin(iClient, g_fPlayerLastPos[iClient]);
-			GetClientEyeAngles(iClient, g_fPlayerLastEyes[iClient]);
-		}
+		L4DTeam Team = L4D_GetClientTeam(iClient);
+		if (Team == L4DTeam_Spectator || Team == L4DTeam_Unassigned)
+			continue;
+
+		if (g_cvarDebug.BoolValue)
+			CPrintToChatAll("%t Set timer to: {blue}%N{default} | {green}%d{default}", "Tag", iClient, g_cvarTime.IntValue);
+
+		g_iPlayerAFK[iClient] = g_cvarTime.IntValue;
+		GetClientAbsOrigin(iClient, g_fPlayerLastPos[iClient]);
+		GetClientEyeAngles(iClient, g_fPlayerLastEyes[iClient]);
 	}
 
 	delete g_hStartTimerAFK;
@@ -216,61 +223,59 @@ Action Timer_CheckAFK(Handle timer)
 
 	for (int i = 1; i <= MaxClients; i++)
 	{
-		if (IsClientInGame(i) && !IsFakeClient(i))
+		if (!IsClientInGame(i) || IsFakeClient(i))
+			continue;
+
+		L4DTeam Team = L4D_GetClientTeam(i);
+		if (Team == L4DTeam_Spectator || Team == L4DTeam_Unassigned)
+			continue;
+
+		if (g_cvarPlayerIgnore.BoolValue && IsReady(i))
+			continue;
+
+		if (g_cvarShowTimer.BoolValue && g_iPlayerAFK[i] <= g_cvarShowTimer.IntValue)
+			CPrintToChat(i, "%t %t", "Tag", "ShowTimer", g_iPlayerAFK[i]);
+
+		GetClientAbsOrigin(i, fPos);
+		GetClientEyeAngles(i, fEyes);
+
+		bIsAFK = true;
+
+		if (GetVectorDistance(fPos, g_fPlayerLastPos[i]) > 80.0)
+			bIsAFK = false;
+
+		if (bIsAFK)
 		{
-			int iTeam = GetClientTeam(i);
-			if (iTeam == L4D2Team_Survivor || iTeam == L4D2Team_Infected)
+			if (fEyes[0] != g_fPlayerLastEyes[i][0] && fEyes[1] != g_fPlayerLastEyes[i][1])
+				bIsAFK = false;
+		}
+
+		if (bIsAFK)
+		{
+			if (g_iPlayerAFK[i] > 0)
 			{
-				if (g_cvarPlayerIgnore.BoolValue && IsReady(i))
-					continue;
+				g_iPlayerAFK[i] = g_iPlayerAFK[i] - 1;
 
-				if (g_cvarShowTimer.BoolValue && g_iPlayerAFK[i] <= g_cvarShowTimer.IntValue)
-					CPrintToChat(i, "%t %t", "Tag", "ShowTimer", g_iPlayerAFK[i]);
-
-				GetClientAbsOrigin(i, fPos);
-				GetClientEyeAngles(i, fEyes);
-
-				bIsAFK = true;
-
-				if (GetVectorDistance(fPos, g_fPlayerLastPos[i]) > 80.0)
-					bIsAFK = false;
-
-				if (bIsAFK)
+				if (g_iPlayerAFK[i] <= 0)
 				{
-					if (fEyes[0] != g_fPlayerLastEyes[i][0] && fEyes[1] != g_fPlayerLastEyes[i][1])
-						bIsAFK = false;
-				}
-
-				if (bIsAFK)
-				{
-					if (g_iPlayerAFK[i] > 0)
-					{
-						g_iPlayerAFK[i] = g_iPlayerAFK[i] - 1;
-
-						if (g_iPlayerAFK[i] <= 0)
-						{
-							ChangeClientTeam(i, L4D2Team_Spectator);
-							CPrintToChatAll("%t %t", "Tag", "MoveToSpec", i, g_iPlayerAFK[i]);
-						}
-					}
-				}
-				else
-				{
-					ResetTimers(i);
+					L4D_ChangeClientTeam(i, L4DTeam_Spectator);
+					CPrintToChatAll("%t %t", "Tag", "MoveToSpec", i, g_iPlayerAFK[i]);
 				}
 			}
 		}
+		else
+			ResetTimers(i);
 	}
-
 	return Plugin_Continue;
 }
 
 void ResetTimers(int iClient)
 {
-	int iTeam = GetClientTeam(iClient);
-	if (iTeam == L4D2Team_Survivor || iTeam == L4D2Team_Infected)
-		g_iPlayerAFK[iClient] = g_cvarTime.IntValue;
+	L4DTeam Team = L4D_GetClientTeam(iClient);
+	if (Team == L4DTeam_Spectator || Team == L4DTeam_Unassigned)
+		return;
 
+	g_iPlayerAFK[iClient] = g_cvarTime.IntValue;
 	GetClientAbsOrigin(iClient, g_fPlayerLastPos[iClient]);
 	GetClientEyeAngles(iClient, g_fPlayerLastEyes[iClient]);
 }
@@ -293,4 +298,41 @@ stock void LoadTranslation(const char[] translation)
 		SetFailState("Missing translation file %s.txt", translation);
 
 	LoadTranslations(translation);
+}
+
+/**
+ * Returns the clients team using L4DTeam.
+ *
+ * @param client		Player's index.
+ * @return				Current L4DTeam of player.
+ * @error				Invalid client index.
+ */
+stock L4DTeam L4D_GetClientTeam(int client)
+{
+	int team = GetClientTeam(client);
+	return view_as<L4DTeam>(team);
+}
+
+/**
+ * Changes the team of a client in Left 4 Dead.
+ *
+ * @param client The client index.
+ * @param team The new team for the client.
+ */
+stock void L4D_ChangeClientTeam(int client, L4DTeam team)
+{
+	ChangeClientTeam(client, view_as<int>(team));
+}
+
+/**
+ * Checks if a client index is valid.
+ *
+ * @param client The client index to check.
+ */
+stock bool IsValidClientIndex(int iClient)
+{
+	if (!iClient || iClient < 1 || iClient > MaxClients)
+		return false;
+
+	return true;
 }

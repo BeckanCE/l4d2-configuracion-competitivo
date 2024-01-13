@@ -1,0 +1,43 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"en"		"[{olive}CallVote{default}]"
+	}
+	"Usage"
+	{
+		"en"		"Usage:"
+	}
+	"PluginDisabled"
+	{
+		"en"		"Plugin {red}disabled{default}."
+	}
+	"DBQueryError"
+	{
+		"en"		"Database query {red}error{default}"
+	}
+	"DBTableCreated"
+	{
+		"en"		"Table created {green}successfully{default}."
+	}
+	"KickReached"
+	{
+		"en"		"The limit for {green}kicking{default} calls has been reached ({red}%d{default}/{olive}%d{default})"
+	}
+	"KickLimit"
+	{
+		"en"		"Your call limit to {green}kick{default} is ({olive}%d{default}/{olive}%d{default})"
+	}
+	"KickLimitTarget"
+	{
+		"en"		"The call limit for ({olive}%s{default}) for {green}kick{default} is ({olive}%d{default}/{olive}%d{default})"
+	}
+	"KickShow"
+	{
+		"en"		"{blue}%N{default} ({olive}%s{default}) | Kick: {olive}%d{default}"
+	}
+	"NoFound"
+	{
+		"en"		"There are {red}no registered{default} kicks"
+	}
+}

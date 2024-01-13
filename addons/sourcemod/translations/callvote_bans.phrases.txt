@@ -1,0 +1,111 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"en"		"[{olive}CallVote{default}]"
+	}
+	"Usage"
+	{
+		"en"		"{green}Usage{default}"
+	}
+	"PluginDisabled"
+	{
+		"en"		"Plugin {red}disabled{default}."
+	}
+	"DBQueryError"
+	{
+		"en"		"Database query {red}error{default}"
+	}
+	"DBTableCreated"
+	{
+		"en"		"Table created {green}successfully{default}."
+	}
+	"Cooldown"
+	{
+		"en"		"The command is on {green}cooldown{default}."
+	}
+	"ShowNoBan"
+	{
+		"en"		"There are {blue}no{default} bans."
+	}
+	"ShowBan"
+	{
+		"en"		"{green}%s{default} has a ban: %s"
+	}
+	"ShowBans"
+	{
+		"en"		"{green}%s{default} has a bans: [%s] "
+	}
+	"DBNoConnect"
+	{
+		"en"		"{red}Could not{default} connect to database."
+	}
+	"PlayerAlreadyBanned"
+	{
+		"en"		"Player already {red}banned{default}."
+	}
+	"BanUpdated"
+	{
+		"en"		"Ban updated {blue}successfully{default}."
+	}
+	"BanCreated"
+	{
+		"en"		"Ban created {green}successfully{default}."
+	}
+	"BanNotCreated"
+	{
+		"en"		"{red}Error{default} to creating ban."
+	}
+	"BanDeleted"
+	{
+		"en"		"Ban deleted {blue}successfully{default}."
+	}
+	"SeeTypeBans"
+	{
+		"en"		"See the console to list type bans."
+	}
+	"PlayerNotFound"
+	{
+		"en"		"Player {red}not{default} found."
+	}
+	"TypeBans"
+	{
+		"en"		"Type bans: \nDifficulty = 1\nRestart    = 2\nKick       = 4\nMission    = 8\nLobby      = 16\nChapter    = 32\nAllTalk    = 64\nAll        = 127"
+	}
+	"VoteBlocked"
+	{
+		"en"		"You were {red}banned{default} from this type of vote."
+	}
+	"VOTE_CHANGEDIFFICULTY"
+	{
+		"en"		"{red}Difficulty{default}"
+	}
+	"VOTE_RESTARTGAME"
+	{
+		"en"		"{red}Restart{default}"
+	}
+	"VOTE_KICK"
+	{
+		"en"		"{red}Kick{default}"
+	}
+	"VOTE_CHANGEMISSION"
+	{
+		"en"		"{red}Mission{default}"
+	}
+	"VOTE_RETURNTOLOBBY"
+	{
+		"en"		"{red}Lobby{default}"
+	}
+	"VOTE_CHANGECHAPTER"
+	{
+		"en"		"{red}Chapter{default}"
+	}
+	"VOTE_CHANGEALLTALK"
+	{
+		"en"		"{red}AllTalk{default}"
+	}
+	"Separator"
+	{
+		"en"		"|"
+	}
+}

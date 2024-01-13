@@ -1,0 +1,107 @@
+"Phrases"
+{
+	"Usage"
+	{
+		"es"		"{green}Uso{default}"
+	}
+	"PluginDisabled"
+	{
+		"es"		"Plugin {red}desactivado{default}."
+	}
+	"DBQueryError"
+	{
+		"es"		"{red}Error{default} en la consulta a la base de datos"
+	}
+	"DBTableCreated"
+	{
+		"es"		"Tabla creada {green}correctamente{default}."
+	}
+	"Cooldown"
+	{
+		"es"		"El comando está en {green}enfriamiento{default}."
+	}
+	"ShowNoBan"
+	{
+		"es"		"No tiene {blue}bans{default}."
+	}
+	"ShowBan"
+	{
+		"es"		"{green}%s{default} tiene el siguiente ban: %s"
+	}
+	"ShowBans"
+	{
+		"es"		"{green}%s{default} tiene los siguientes bans: [%s] "
+	}
+	"DBNoConnect"
+	{
+		"es"		"{red}No se pudo{default} conectar a la base de datos."
+	}
+	"PlayerAlreadyBanned"
+	{
+		"es"		"El jugador ya esta {red}baneado{default}."
+	}
+	"BanUpdated"
+	{
+		"es"		"Ban actualizado {blue}correctamente{default}."
+	}
+	"BanCreated"
+	{
+		"es"		"Ban creado {green}correctamente{default}."
+	}
+	"BanNotCreated"
+	{
+		"es"		"{red}Error{default} al crear el ban."
+	}
+	"BanDeleted"
+	{
+		"es"		"Ban borrado {blue}correctamente{default}."
+	}
+	"SeeTypeBans"
+	{
+		"es"		"Ve a la consola para ver los tipos de bans."
+	}
+	"PlayerNotFound"
+	{
+		"es"		"Jugador {red}no{default} encontrado."
+	}
+	"TypeBans"
+	{
+		"es"		"Tipos de bans: \nDificultad      = 1\nReiniciar       = 2\nExpulsar        = 4\nMision          = 8\nVolver al Lobby = 16\nCapitulo        = 32\nAllTalk         = 64\nTodos           = 127"
+	}
+	"VoteBlocked"
+	{
+		"es"		"Estas {red}baneado{default} para este tipo de votacion."
+	}
+	"VOTE_CHANGEDIFFICULTY"
+	{
+		"es"		"{red}Dificultad{default}"
+	}
+	"VOTE_RESTARTGAME"
+	{
+		"es"		"{red}Reiniciar{default}"
+	}
+	"VOTE_KICK"
+	{
+		"es"		"{red}Expulsar{default}"
+	}
+	"VOTE_CHANGEMISSION"
+	{
+		"es"		"{red}Mision{default}"
+	}
+	"VOTE_RETURNTOLOBBY"
+	{
+		"es"		"{red}Volver al Lobby{default}"
+	}
+	"VOTE_CHANGECHAPTER"
+	{
+		"es"		"{red}Capitulo{default}"
+	}
+	"VOTE_CHANGEALLTALK"
+	{
+		"es"		"{red}AllTalk{default}"
+	}
+	"Separator"
+	{
+		"es"		"|"
+	}
+}

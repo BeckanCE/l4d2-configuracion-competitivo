@@ -1,0 +1,171 @@
+"Phrases"
+{
+	"PluginDisabled"
+	{
+		"es"		"Plugin {red}desactivado{default}."
+	}
+	"DBQueryError"
+	{
+		"es"		"{red}Error{default} en la consulta a la base de datos"
+	}
+	"DBTableCreated"
+	{
+		"es"		"Tabla creada {green}correctamente{default}."
+	}
+	"TryAgain"
+	{
+		"es"		"No se puede solicitar una votación en este momento, ¡inténtalo de nuevo en %is!"
+	}
+	"ChangeDifficulty"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}cambiar la dificultad{default}: {blue}%s{default}"
+	}
+	"RestartGame"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}reiniciar la campaña{default}"
+	}
+	"Kick"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}expulsar{default} a {red}%N{default}"
+	}
+	"ChangeMission"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}cambiar la campaña{default}: {blue}%s{default}"
+	}
+	"ReturnToLobby"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}volver a la sala de espera{default}"
+	}
+	"ChangeChapter"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}cambiar el capitulo{default}: {blue}%s{default}"
+	}
+	"ChangeAllTalk"
+	{
+		"es"		"{green}%N{default} llamó votación para {olive}cambiar AllTalk{default}"
+	}
+    "VoteDisabled"
+    {
+        "es"        "Esta llamada de votación fue {red}desactivada{default}."
+    }
+    "SourceTVKick"
+    {
+        "es"        "No está permitido {red}expulsar{default} al bot {olive}SourceTV{default}"
+    }
+	"BotKick"
+	{
+		"es"		"No está permitido {red}expulsar{default} a un bot"
+	}
+    "KickSelf"
+    {
+        "es"        "No puedes {red}expulsarte{default} a ti mismo"
+    }
+    "Inmunity"
+    {
+        "es"        "No puedes {red}expulsar{default} a este jugador"
+    }
+    "InmunityTarget"
+    {
+        "es"        "%N Intento {red}expulsarte{default}"
+    }
+    "SpecVote"
+    {
+        "es"        "No puedes llamar una votación mientras estás {olive}especteando{default}"
+    }
+	"l4d2c1"
+	{
+		"es"		"Punto Muerto"
+	}
+	"l4d2c2"
+	{
+		"es"		"Feria siniestra"
+	}
+	"l4d2c3"
+	{
+		"es"		"Pantanos"
+	}
+	"l4d2c4"
+	{
+		"es"		"El diluvio"
+	}
+	"l4d2c5"
+	{
+		"es"		"La parroquia"
+	}
+	"l4d2c6"
+	{
+		"es"		"Defunción"
+	}
+	"l4d2c7"
+	{
+		"es"		"El sacrificio"
+	}
+	"l4d2c8"
+	{
+		"es"		"Alta médica"
+	}
+	"l4d2c9"
+	{
+		"es"		"Terapia de choque"
+	}
+	"l4d2c10"
+	{
+		"es"		"Toque de difuntos"
+	}
+	"l4d2c11"
+	{
+		"es"		"Último vuelo"
+	}
+	"l4d2c12"
+	{
+		"es"		"Cosecha de sangre"
+	}
+	"l4d2c13"
+	{
+		"es"		"Aguas turbulentas"
+	}
+	"Easy"
+	{
+		"es"		"Fácil"
+	}
+	"Normal"
+	{
+		"es"		"Normal"
+	}
+	"Hard"
+	{
+		"es"		"Avanzado"
+	}
+	"Impossible"
+	{
+		"es"		"Experto"
+	}
+	"SameDifficulty"
+	{
+		"es"		"Es la misma dificultad"
+	}
+	"L4DTeam_Survivor"
+	{
+		"es"		"Sobreviviente"
+	}
+	"L4DTeam_Infected"
+	{
+		"es"		"Infectado"
+	}
+	"L4DTeam_Spectator"
+	{
+		"es"		"Espectador"
+	}
+	"L4DTeam_Unassigned"
+	{
+		"es"		"Ninguno"
+	}
+	"VoteCastAnon"
+	{
+		"es"		"Un {olive}%s{default}: %s"
+	}
+	"VoteCast"
+	{
+		"es"		"{green}%N{default} del equipo {olive}%s{default}: %s"
+	}
+}

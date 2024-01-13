@@ -1,0 +1,39 @@
+"Phrases"
+{
+	"Usage"
+	{
+		"es"		"{green}Uso{default}"
+	}
+	"PluginDisabled"
+	{
+		"es"		"Plugin {red}desactivado{default}."
+	}
+	"DBQueryError"
+	{
+		"es"		"{red}Error{default} en la consulta a la base de datos"
+	}
+	"DBTableCreated"
+	{
+		"es"		"Tabla creada {green}correctamente{default}."
+	}
+	"KickReached"
+	{
+		"es"		"Se alcanzado el límite de llamadas para {green}expulsar{default} ({red}%d{default}/{olive}%d{default})"
+	}
+	"KickLimit"
+	{
+		"es"		"Su límite de llamadas para {green}expulsar{default} es de ({olive}%d{default}/{olive}%d{default})"
+	}
+	"KickLimitTarget"
+	{
+		"es"		"El límite de llamadas de ({olive}%s{default}) para {green}expulsar{default} es de ({olive}%d{default}/{olive}%d{default})"
+	}
+	"KickShow"
+	{
+		"es"		"{blue}%N{default} ({olive}%s{default}) | Kick: {olive}%d{default}"
+	}
+	"NoFound"
+	{
+		"es"		"{red}No existen{default} kicks registrados"
+	}
+}

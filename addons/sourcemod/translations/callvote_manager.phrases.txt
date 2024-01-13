@@ -1,0 +1,179 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"en"		"[{olive}CallVote{default}]"
+	}
+	"PluginDisabled"
+	{
+		"en"		"Plugin {red}disabled{default}."
+	}
+	"DBQueryError"
+	{
+		"en"		"Database query {red}error{default}"
+	}
+	"DBTableCreated"
+	{
+		"en"		"Table created {green}successfully{default}."
+	}
+	"TryAgain"
+	{
+		"en"		"A vote can't be called right now, try again in %is!"
+	}
+	"ChangeDifficulty"
+	{
+		"en"		"{green}%N{default} called vote for {olive}change difficulty{default}: {blue}%s{default}"
+	}
+	"RestartGame"
+	{
+		"en"		"{green}%N{default} called vote for {olive}restart campaign{default}"
+	}
+	"Kick"
+	{
+		"en"		"{green}%N{default} called vote to {olive}kick{default} {red}%N{default}"
+	}
+	"ChangeMission"
+	{
+		"en"		"{green}%N{default} called vote for {olive}change campaign{default}: {blue}%s{default}"
+	}
+	"ReturnToLobby"
+	{
+		"en"		"{green}%N{default} called vote to {olive}return lobby{default}"
+	}
+	"ChangeChapter"
+	{
+		"en"		"{green}%N{default} called vote for {olive}change chapter{default}: {blue}%s{default}"
+	}
+	"ChangeAllTalk"
+	{
+		"en"		"{green}%N{default} called vote for {olive}change AllTalk{default}"
+	}
+    "VoteDisabled"
+    {
+        "en"        "This voting call was {red}deactivated{default}."
+    }
+    "SourceTVKick"
+    {
+        "en"        "It is not allowed to {red}kick{default} the {olive}SourceTV{default} bot"
+    }
+	"BotKick"
+	{
+		"en"		"It is not allowed to {red}kick{default} a bot"
+	}
+    "KickSelf"
+    {
+        "en"        "You can't {red}kick{default} yourself"
+    }
+    "Inmunity"
+    {
+        "en"        "You can't {red}kick{default} this player"
+    }
+    "InmunityTarget"
+    {
+        "en"        "%N tried to {red}kick{default} you"
+    }
+    "SpecVote"
+    {
+        "en"        "You can't call a vote while you are {olive}spectating{default}"
+    }
+	"l4d2c1"
+	{
+		"en"		"Dead Center"
+	}
+	"l4d2c2"
+	{
+		"en"		"Dark Carnival"
+	}
+	"l4d2c3"
+	{
+		"en"		"Swamp Fever"
+	}
+	"l4d2c4"
+	{
+		"en"		"Hard Rain"
+	}
+	"l4d2c5"
+	{
+		"en"		"The Parish"
+	}
+	"l4d2c6"
+	{
+		"en"		"The Passing"
+	}
+	"l4d2c7"
+	{
+		"en"		"The Sacrifice"
+	}
+	"l4d2c8"
+	{
+		"en"		"No Mercy"
+	}
+	"l4d2c9"
+	{
+		"en"		"Crash Course"
+	}
+	"l4d2c10"
+	{
+		"en"		"Death Toll"
+	}
+	"l4d2c11"
+	{
+		"en"		"Dead Air"
+	}
+	"l4d2c12"
+	{
+		"en"		"Blood Harvest"
+	}
+	"l4d2c13"
+	{
+		"en"		"Cold Stream"
+	}
+	"Easy"
+	{
+		"en"		"Easy"
+	}
+	"Normal"
+	{
+		"en"		"Normal"
+	}
+	"Hard"
+	{
+		"en"		"Hard"
+	}
+	"Impossible"
+	{
+		"en"		"Impossible"
+	}
+	"SameDifficulty"
+	{
+		"en"		"Same difficulty"
+	}
+	"L4DTeam_Survivor"
+	{
+		"en"		"Survivor"
+	}
+	"L4DTeam_Infected"
+	{
+		"en"		"Infected"
+	}
+	"L4DTeam_Spectator"
+	{
+		"en"		"Spectator"
+	}
+	"L4DTeam_Unassigned"
+	{
+		"en"		"None"
+	}
+	"VoteCastYes"
+	{
+		"en"		"Progress"
+	}
+	"VoteCastAnon"
+	{
+		"en"		"A {olive}%s{default}: %s"
+	}
+	"VoteCast"
+	{
+		"en"		"{green}%N{default} from team {olive}%s{default}: %s"
+	}
+}

@@ -195,9 +195,9 @@ Action AnnounceFF(Handle timer, int attackerc) //Called if the attacker did not 
 					case 1:
 					{
 						if (IsClientInGame(attackerc) && !IsFakeClient(attackerc))
-							CPrintToChat(attackerc, "<{olive}MKO{default}> %T", "FF_dealt (C)", attackerc, victim, DamageCache[attackerc][i]);
+							CPrintToChat(attackerc, "{green}<{olive}MKO{green}>{default} %T", "FF_dealt (C)", attackerc, victim, DamageCache[attackerc][i]);
 						if (IsClientInGame(i) && !IsFakeClient(i))
-							CPrintToChat(i, "<{olive}MKO{default}> %T", "FF_receive (C)", i, attacker, DamageCache[attackerc][i]);
+							CPrintToChat(i, "{green}<{olive}MKO{green}>{default} %T", "FF_receive (C)", i, attacker, DamageCache[attackerc][i]);
 					}
 					case 2:
 					{

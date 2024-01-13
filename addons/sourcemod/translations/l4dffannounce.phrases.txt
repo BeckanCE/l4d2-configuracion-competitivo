@@ -8,7 +8,7 @@
 	}
 	"FF_dealt (C)"
 	{
-		"en"		"{green}You{default} did {blue}FF{default} to {lightgreen}%s{default} @ {lightgreen}%d{default} HP."
+		"en"		"{green}You{default} did {lightblue}FF{default} to {olive}%s{default} @ {olive}%d{default} HP."
 		"zho"		"你剛造成 {green}%d{default} 滴血給 {lightgreen}%s{default}."
 		"chi"		"你刚造成 {green}%d{default} 滴血给 {lightgreen}%s{default}."
 	}
@@ -20,7 +20,7 @@
 	}
 	"FF_receive (C)"
 	{
-		"en"		"{lightgreen}%s{default} did {blue}FF{default} to {green}you{default} @ {lightgreen}%d{default} HP."
+		"en"		"{olive}%s{default} did {lightblue}FF{default} to {green}you{default} @ {olive}%d{default} HP."
 		"zho"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血給你."
 		"chi"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血给你."
 	}

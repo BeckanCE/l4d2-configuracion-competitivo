@@ -94,7 +94,7 @@ void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 
 	if(GetClientTeam(attacker) == 2 && GetClientTeam(victim) == 2) //人類 kill &友傷
 	{
-		CPrintToChatAll("<{olive}MKO{default}> %t", "KILL", attacker, victim);
+		CPrintToChatAll("{green}<{olive}MKO{green}>{default} %t", "KILL", attacker, victim);
 	}	
 }
 

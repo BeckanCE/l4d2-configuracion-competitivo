@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # PID del proceso a verificar
-target_pid=56592
+target_pid=1769
 process_name="screen"  # Reemplaza con el nombre real del proceso
 command_to_execute="/etc/init.d/srcds1 start"    # Reemplaza con el comando que deseas ejecutar como root
 

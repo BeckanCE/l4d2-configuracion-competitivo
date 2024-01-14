@@ -2,15 +2,15 @@
 {
 	"KILL"
 	{
-		"en"		"{lightgreen}%N {default}killed {olive}%N{default}."
-		"zho"		"{lightgreen}%N {default}星爆氣流斬 {olive}%N{default}."
-		"chi"		"{lightgreen}%N {default}星爆气流斩 {olive}%N{default}."
+		"en"		"{olive}%N {lightblue}killed {olive}%N{default}."
+		"zho"		"{olive}%N {lightblue}星爆氣流斬 {olive}%N{default}."
+		"chi"		"{olive}%N {lightblue}星爆气流斩 {olive}%N{default}."
 	}
 	"FF_dealt (C)"
 	{
 		"en"		"{green}You{default} did {lightblue}FF{default} to {olive}%s{default} @ {olive}%d{default} HP."
-		"zho"		"你剛造成 {green}%d{default} 滴血給 {lightgreen}%s{default}."
-		"chi"		"你刚造成 {green}%d{default} 滴血给 {lightgreen}%s{default}."
+		"zho"		"{green}你{default}  做了 {lightblue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
+		"chi"		"{green}你{default}  做了 {lightblue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
 	}
 	"FF_dealt"
 	{
@@ -21,8 +21,8 @@
 	"FF_receive (C)"
 	{
 		"en"		"{olive}%s{default} did {lightblue}FF{default} to {green}you{default} @ {olive}%d{default} HP."
-		"zho"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血給你."
-		"chi"		"{lightgreen}%s{default} 造成了 {green}%d{default} 滴血给你."
+		"zho"		"{olive}%s{default} 做了 {lightblue}友军射击{default} 致 {green}你{default} @ {olive}%d{default} 健康."
+		"chi"		"{olive}%s{default} 做了 {lightblue}友军火力{default} 致 {green}你{default} @ {olive}%d{default} 健康."
 	}
 	"FF_receive"
 	{

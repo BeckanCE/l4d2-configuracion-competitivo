@@ -1,1 +1,1 @@
-http://104.131.164.16/motd/makakomotd.html
+http://161.132.42.115/makako/motd.html

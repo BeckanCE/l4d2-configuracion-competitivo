@@ -2,61 +2,61 @@
 {
 	"SCOPE_DETECTED"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You can't use emotes while scoping!"
-		"es"			"{green}<{olive}MKO{green}>{darkred} No puedes usar esto mientras usas la mirilla del arma"
+		"en"			"[{olive}Emotes{default}]{darkred} You can't use emotes while scoping!"
+		"es"			"[{olive}Emotes{default}]{darkred} No puedes usar esto mientras usas la mirilla del arma"
 	}
 	"NO_DANCES_ACCESS_FLAG"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You don't have access to use dances!!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Dances kullanmaya erişiminiz yok!!"
-		"es"			"{green}<{olive}MKO{green}>{darkred} No tienes acceso a usar dances"
+		"en"			"[{olive}Emotes{default}]{darkred} You don't have access to use dances!!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Dances kullanmaya erişiminiz yok!!"
+		"es"			"[{olive}Emotes{default}]{darkred} No tienes acceso a usar dances"
 	}
 	"NO_EMOTES_ACCESS_FLAG"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You don't have access to use emotes!!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Emotes kullanmaya erişiminiz yok!!"
-		"es"			"{green}<{olive}MKO{green}>{darkred} No tienes acceso a usar emotes"
+		"en"			"[{olive}Emotes{default}]{darkred} You don't have access to use emotes!!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Emotes kullanmaya erişiminiz yok!!"
+		"es"			"[{olive}Emotes{default}]{darkred} No tienes acceso a usar emotes"
 	}
 	"MUST_BE_ALIVE"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You must be alive to use this!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Bunu kullanmak için hayatta olmalısın!"	
-		"es"			"{green}<{olive}MKO{green}>{darkred} Debes estar vivo para usar eso"
+		"en"			"[{olive}Emotes{default}]{darkred} You must be alive to use this!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Bunu kullanmak için hayatta olmalısın!"	
+		"es"			"[{olive}Emotes{default}]{darkred} Debes estar vivo para usar eso"
 	}
 
 	"STAY_ON_GROUND"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You must stay on the ground to use this!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Bunu kullanmak için haraket etmemelisin!"		
-		"es"			"{green}<{olive}MKO{green}>{darkred} Debes estar en el suelo para usar eso"
+		"en"			"[{olive}Emotes{default}]{darkred} You must stay on the ground to use this!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Bunu kullanmak için haraket etmemelisin!"		
+		"es"			"[{olive}Emotes{default}]{darkred} Debes estar en el suelo para usar eso"
 	}
 
 	"COOLDOWN_MKO"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} It is on cooldown!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Biraz bekle!"		
-		"es"			"{green}<{olive}MKO{green}>{darkred} Está enfriándose"
+		"en"			"[{olive}Emotes{default}]{darkred} It is on cooldown!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Biraz bekle!"		
+		"es"			"[{olive}Emotes{default}]{darkred} Está enfriándose"
 	}
 
 	"AMIN_1_INVALID"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} Argument 1 is invalid!!!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Bağımsız değişken 1 geçersiz!!!"		
-		"es"			"{green}<{olive}MKO{green}>{darkred} El Argumento 1 es inválido"
+		"en"			"[{olive}Emotes{default}]{darkred} Argument 1 is invalid!!!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Bağımsız değişken 1 geçersiz!!!"		
+		"es"			"[{olive}Emotes{default}]{darkred} El Argumento 1 es inválido"
 	}
 	
 	"CANNOT_USE_NOW"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} You can't use it right now!"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Şu anda kullanamazsın!"		
-		"es"			"{green}<{olive}MKO{green}>{darkred} No puedes usar eso ahora mismo!"
+		"en"			"[{olive}Emotes{default}]{darkred} You can't use it right now!"
+		"tr"			"[{olive}Emotes{default}]{darkred} Şu anda kullanamazsın!"		
+		"es"			"[{olive}Emotes{default}]{darkred} No puedes usar eso ahora mismo!"
 	}
 
 	"INVALID_EMOTE_ID"
 	{
-		"en"			"{green}<{olive}MKO{green}>{darkred} Invalid Emote ID, Should be between (1-86)"
-		"tr"			"{green}<{olive}MKO{green}>{darkred} Geçersiz Emote ID, (1-86) arasında olmalıdır"	
-		"es"			"{green}<{olive}MKO{green}>{darkred} ID de emote inválida, debe estar entre (1-86)"
+		"en"			"[{olive}Emotes{default}]{darkred} Invalid Emote ID, Should be between (1-86)"
+		"tr"			"[{olive}Emotes{default}]{darkred} Geçersiz Emote ID, (1-86) arasında olmalıdır"	
+		"es"			"[{olive}Emotes{default}]{darkred} ID de emote inválida, debe estar entre (1-86)"
 	}
 
 	"RANDOM_EMOTE"

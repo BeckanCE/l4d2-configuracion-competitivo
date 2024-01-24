@@ -2,15 +2,15 @@
 {
 	"KILL"
 	{
-		"en"		"{olive}%N {lightblue}killed {olive}%N{default}."
-		"zho"		"{olive}%N {lightblue}星爆氣流斬 {olive}%N{default}."
-		"chi"		"{olive}%N {lightblue}星爆气流斩 {olive}%N{default}."
+		"en"		"{olive}%N {blue}killed {olive}%N{default}."
+		"zho"		"{olive}%N {blue}星爆氣流斬 {olive}%N{default}."
+		"chi"		"{olive}%N {blue}星爆气流斩 {olive}%N{default}."
 	}
 	"FF_dealt (C)"
 	{
-		"en"		"{green}You{default} did {lightblue}FF{default} to {olive}%s{default} @ {olive}%d{default} HP."
-		"zho"		"{green}你{default}  做了 {lightblue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
-		"chi"		"{green}你{default}  做了 {lightblue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
+		"en"		"{green}You{default} did {blue}FF{default} to {olive}%s{default} @ {olive}%d{default} HP."
+		"zho"		"{green}你{default}  做了 {blue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
+		"chi"		"{green}你{default}  做了 {blue}友军射击{default} 到 {olive}%s{default} @ {olive}%d{default} 健康."
 	}
 	"FF_dealt"
 	{
@@ -20,9 +20,9 @@
 	}
 	"FF_receive (C)"
 	{
-		"en"		"{olive}%s{default} did {lightblue}FF{default} to {green}you{default} @ {olive}%d{default} HP."
-		"zho"		"{olive}%s{default} 做了 {lightblue}友军射击{default} 致 {green}你{default} @ {olive}%d{default} 健康."
-		"chi"		"{olive}%s{default} 做了 {lightblue}友军火力{default} 致 {green}你{default} @ {olive}%d{default} 健康."
+		"en"		"{olive}%s{default} did {blue}FF{default} to {green}you{default} @ {olive}%d{default} HP."
+		"zho"		"{olive}%s{default} 做了 {blue}友军射击{default} 致 {green}你{default} @ {olive}%d{default} 健康."
+		"chi"		"{olive}%s{default} 做了 {blue}友军火力{default} 致 {green}你{default} @ {olive}%d{default} 健康."
 	}
 	"FF_receive"
 	{

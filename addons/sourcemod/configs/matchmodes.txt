@@ -46,6 +46,10 @@
 		{
 		    "name" "Apex"
 		}
+		"tankzonevs"
+		{
+		    "name" "TankZoneVs"
+		}
 	}
 	"Configuraciones 3v3"
 	{
@@ -140,4 +144,11 @@
 		    "name" "Equilibrium"
 		}
 	}
+	"Mutaciones Confogl"
+	{
+	    "tankzonevs"
+		{
+		    "name" "TankZoneVs"
+		}
+	}	
 }

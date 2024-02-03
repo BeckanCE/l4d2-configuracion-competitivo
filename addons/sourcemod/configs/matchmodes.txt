@@ -6,6 +6,10 @@
 		{
 			"name" "ZoneMod"
 		}
+		"cedamod"
+		{
+		    "name" "CedaMod"
+		}
 		"zoneretro"
 		{
 			"name" "ZoneMod Retro"
@@ -20,7 +24,7 @@
 		}
 		"scavogl"
 		{
-		    "name" "Scavogl"
+		    "name" "ScavOgl"
 	    }
 		"scavhunters"
 		{
@@ -32,7 +36,7 @@
 		}
 		"pmelite"
 		{
-			"name" "Promod Elite"
+			"name" "PromMod Elite"
 		}
 		"acemodrv"
 		{
@@ -67,7 +71,7 @@
 		}
 		"scav3v3"
 		{   
-		    "name" "Scavogl"
+		    "name" "ScavOgl"
 		}
 		"scavh3v3"
 		{
@@ -98,7 +102,7 @@
 		}
 		"scav2v2"
 		{
-			"name" "Scavogl"
+			"name" "ScavOgl"
 		}
 		"scavh2v2"
 		{
@@ -129,7 +133,7 @@
 		}
 		"scav1v1"
 		{
-		    "name" "Scavogl"
+		    "name" "ScavOgl"
 		}
 		"scavh1v1"
 		{

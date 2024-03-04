@@ -50,6 +50,10 @@
 		{
 		    "name" "Apex"
 		}
+		"deadman"
+		{
+		    "name" "Deadman"
+		}
 		"tankzonevs"
 		{
 		    "name" "TankZoneVs"
@@ -60,6 +64,10 @@
 		"zm3v3"
 		{
 			"name" "ZoneMod"
+		}
+		"cm3v3"
+		{
+		    "name" "CedaMod"
 		}
 		"nextmod3v3"
 		{
@@ -95,6 +103,10 @@
 		"nextmod2v2"
 		{
 			"name" "NextMod"
+		}
+		"cm2v2"
+		{
+		    "name" "CedaMod"
 		}
 		"zh2v2"
 		{
